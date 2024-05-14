@@ -1,0 +1,30 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "AutoWash",
+    "name": "AutoDetaljering",
+    "image": "",
+    "priceRange": "499 - 1000",
+    "telephone": "28830691",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mølleparken 12",
+        "addressLocality": "Vonsild",
+        "addressRegion": "Kolding",
+        "postalCode": "6000",
+        "addressCountry": "Denmark"
+    },
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Sunday", "Saturday"],
+            "opens": "09:00",
+            "closes": "00:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "16:00",
+            "closes": "00:00"
+        }
+    ]
+}
