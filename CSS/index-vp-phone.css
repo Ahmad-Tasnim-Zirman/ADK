@@ -3,8 +3,290 @@
 @import url(./index.css);
 
 
-/* Screen size for Iphone 13 */
-@media (max-width: 395px) {
+/* Screen size for Large phone */
+@media (max-width: 430px) {
+    
+    /* Navigation */
+    #menu{
+        height: 40px;
+        position: fixed;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-collapse: separate;
+        perspective: 1px;
+        overflow: visible;
+    }
+    
+    #menu a{
+        font-size: 12px;
+        color: white;
+    }
+    
+    #menu li .logo{
+        position: relative;
+        left: 0;
+        top: -5px;
+        width: fit-content;
+        height: fit-content;
+        font-size: 14px;
+    }
+
+    #menu input{
+        position: relative;
+        float: right;
+        left: -15px;
+        top:15px;
+        width: fit-content;
+        height: fit-content;
+        display: block;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    #menu label{
+        position: relative;
+        right: 0;
+        float: right;
+        top: -5px;
+    }
+
+    #menu .links{
+        position: relative;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    #menu .links a{
+        position: relative;
+        width: 80%;
+        text-align: center;
+    }
+
+    #menu .menu{
+        width: 100%;
+        height: fit-content;
+        z-index: 100;
+        border-radius: 8px;
+        background: #242424;
+        position: relative;
+        top: -10px;
+        font-size: 12px;
+    }
+
+    /* Hero Section */
+    #hero{
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        top: 10px;
+        display: inline-block;
+    }
+
+    #hero::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(to top, white, transparent);
+    }
+
+    #hero img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 1;
+        visibility: visible;
+    }
+
+    #hero #shadow-cover{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+    }
+
+    #hero h2{
+        position: absolute;
+        top: 50px;
+        left: 17px;
+        font-size: .8rem;
+        color: #ffff;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    }
+
+    #hero p{
+        position: absolute;
+        left: 22px;
+        top: 80px;
+        font-size: 10px;
+    }
+
+    #hero a{
+        top: 130px;
+        left: 20px;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    #hero a:nth-last-child(1){
+        left: 100px;
+    }
+
+
+    /* Pros section */
+    #pros ul{
+        width: 100%;
+        height: 30px;
+        margin-top: 50px;
+        position: relative;
+        left: 10px;
+    }
+
+    #pros ul li{
+        font-size: .5rem;
+        left: 0;
+    }
+
+    #pros ul li h3>i{
+        font-size: 1.1rem;
+        margin-right: 3px;
+    }
+
+    #pros ul li p{
+        font-size: .5rem;
+        line-height: 1.2;
+        max-width: 75%;
+    }
+
+    /* Packages */
+    .service{
+        width: 100%;
+        margin-top: 20px;
+        height: 100vw;
+        min-height: 55vw;
+    }
+
+    .service>h2{
+        font-size: .8rem;
+        top: 50px;
+        left: 35%;
+    }
+
+    .service .package{
+        width: 120px;
+        margin-right: .5rem;
+        margin-left: .5rem;
+        left: 16%;
+        font-size: 5px;
+        height: fit-content;
+        border: 1px solid;
+        top: 190px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+    }
+
+    .service .package .book{
+        padding: .3rem .8rem;
+        margin-top: .8em;
+        margin-bottom: .8em;
+    }
+
+    .service .package>.information{
+        padding: .7em;
+    }
+
+    .service .package>.information .package_price_vary{
+        font-size: 4px;
+    }
+
+    .service .package>ul>li>i{
+        margin-right: .2em;
+    }
+
+    /* FAQ-Section */
+    .faq-section{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .accordion{
+        padding: 10px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .panel{
+        padding: 0 10px;
+        font-size: 10px;
+    }
+
+    .panel p{
+        margin: 10px 0;
+    }
+
+    /* Footer */
+    .site-footer{
+        font-size: 10px;
+        padding: 20px 10px;
+    }
+
+    .footer-brand{
+        flex-basis: 10%;
+        margin-right: 2%;
+    }
+
+    .footer-brand h2{
+        margin-bottom: 3px;
+        font-size: 14px;
+    }
+
+    .footer-links{
+        /* flex-basis: 10%; */
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .links-column{
+        position: relative;
+        margin-right: 2rem;
+        top: 0;
+        width: fit-content;
+    }
+
+    .links-column:nth-child(1){
+        margin-right: 2rem;
+    }
+
+    .links-column:nth-child(2){
+        top: 8px;
+    }
+
+    .links-column h4{
+        margin-bottom: 3px;
+        font-size: 12px;
+    }
+
+    .links-column a, .links-column p{
+        margin-bottom: 2px;
+    }
+
+    .footer-bottom p{
+        font-size: 8px;
+    }
+
+}
+
+
+
+/* Screen size for Medium phone */
+@media (max-width: 380px) {
     
     /* Navigation */
     #menu{
