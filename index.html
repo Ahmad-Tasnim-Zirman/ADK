@@ -8,10 +8,12 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/nav.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/index-vp-phone.css">
     <title>Auto Detaljering | Kolding</title>
     <script type="application/ld+json" src="./JS/business.json"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,20 +26,19 @@
     <nav id='menu'>
         <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
         <li><a class="logo" href='./index.html'>AutoDetaljering</a></li>
-        <li><a class="book" href=''>Book Tid<i>+</i></a></li>
         <ul  class='menu'>
-            <li><a class="border-bottom" href='./index.html'>Hjem</a></li>
-            <li><a class='dropdown-arrow border-bottom' href=''>Bilpleje</a></li>
-            <li><a class="border-bottom" href='http://'>Om Os</a></li>
-            <!-- <li><a class='dropdown-arrow border-bottom' href=''>Galleri</a></li> -->
-            <li><a class="border-bottom" href='http://'>Kontakt Os</a></li>
+            <li class="links"><a class="border-bottom" href='./index.html'>Hjem</a></li>
+            <li class="links"><a class='border-bottom' href=''>Bilpleje</a></li>
+            <li class="links"><a class='border-bottom' href=''>Pakker</a></li>
+            <li class="links"><a class="border-bottom" href=''>Kontakt Os</a></li>
+            <li class="links"><a class="book" href=''>Book Tid<i>+</i></a></li>
         </ul>
     </nav>
 
     <!-- Hero -->
     <div id="hero">
         <div id="shadow-cover"></div>
-        <img src="./IMG/m5-comp.jpg" alt="Detailing"/>
+        <img src="IMG/m5-comp.jpg" alt="Detailing"/>
         <h2>Avanceret bilpleje</h2>
         <p>Hos AutoDetaljering tæller hvert detalje.</p>
         <a href="#">Læs Mere</a>
@@ -104,7 +105,7 @@
                 <li><i class="fi fi-br-check"></i><p>Polstringshampoo</p></li>
                 <li><i class="fi fi-br-check"></i><p>Fjernelse af insekter og tjære</p></li>
                 <li><i class="fi fi-br-check"></i><p>Indvendig vinduespudsning</p></li>
-                <li><i class="fi fi-br-check"></i><p>Alle hårde overflader skrubbet og renset</p></li>
+                <li><i class="fi fi-br-check"></i><p>Hårde overflader skrubbet og renset</p></li>
                 <li><i class="fi fi-br-check"></i><p>Damprensning</p></li>
                 <li><i class="fi fi-br-check"></i><p>Sæde rengøring</p></li>
                 <li><i class="fi fi-br-check"></i><p>Rensning af sprækker</p></li>
@@ -132,7 +133,7 @@
                 <li><i class="fi fi-br-check"></i><p>Polstringshampoo</p></li>
                 <li><i class="fi fi-br-check"></i><p>Fjernelse af insekter og tjære</p></li>
                 <li><i class="fi fi-br-check"></i><p>Indvendig vinduespudsning</p></li>
-                <li><i class="fi fi-br-check"></i><p>Alle hårde overflader skrubbet og renset</p></li>
+                <li><i class="fi fi-br-check"></i><p>Hårde overflader skrubbet og renset</p></li>
                 <li><i class="fi fi-br-check"></i><p>Damprensning</p></li>
                 <li><i class="fi fi-br-check"></i><p>Sæde rengøring</p></li>
                 <li><i class="fi fi-br-check"></i><p>Rensning af sprækker</p></li>
@@ -144,12 +145,18 @@
     </div>
 
     <!-- FAQ -->
-    <div class="faq-section">
+    <div id="faq" class="faq-section">
         <h2>Ofte Stillede Spørgsmål</h2>
         <div class="faq-item">
             <button class="accordion">Hvor lang tid tager en bilpleje?</button>
             <div class="panel">
-                <p>En komplet bilpleje kan variere i længden, afhængigt af bilens tilstand og den valgte pakke. Normalt tager det mellem 2 til 4 timer.</p>
+                <p>En komplet bilpleje kan variere i længden, afhængigt af bilens tilstand og den valgte pakke. Normalt tager det mellem 3 til 5 timer.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="accordion">Hvor befinder i jer? </button>
+            <div class="panel">
+                <p>Vi befinder os i 6000 Kolding.</p>
             </div>
         </div>
         <div class="faq-item">
@@ -198,7 +205,7 @@
 
 
     <!-- Footer -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="footer">
         <div class="footer-content">
         <div class="footer-brand">
             <h2 class="logo">AutoDetaljering</h2>
@@ -207,22 +214,22 @@
         <div class="footer-links">
             <div class="links-column">
                 <h4>Kontakt Os</h4>
-                <p><i class="fas fa-phone"></i> +45 2883 0691</p>
-                <p><i class="fas fa-envelope"></i> kontakt@autodetaljering.dk</p>
-                <p><i class="fas fa-map-marker-alt"></i> Mølleparken 12, 6000 Kolding</p>
+                <p><i class="fi fi-sr-phone-call"></i> +45 2883 0691</p>
+                <p><i class="fi fi-sr-envelope"></i> kontakt@autodetaljering.dk</p>
+                <p><i class="fi fi-sr-marker"></i> Mølleparken 12, 6000 Kolding</p>
             </div>
             <div class="links-column">
                 <h4>Links</h4>
                 <a href="/om">Om Os</a>
                 <a href="/services">Tjenester</a>
                 <a href="/booking">Book Tid</a>
-                <a href="/faq">FAQ</a>
+                <a href="#faq">FAQ</a>
             </div>
             <div class="links-column">
                 <h4>Følg Os</h4>
-                <a href="https://www.facebook.com/profile.php?id=61559491944763" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
-                <a href="https://www.instagram.com/autodetaljering/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://tiktok.com/@auto.detaljering?_t=8mLq5cY5aCm&_r=1" target="_blank"><i class="fab fa-tiktok"></i> Tiktok</a>
+                <a href="https://www.facebook.com/profile.php?id=61559491944763" target="_blank"><i class="fi fi-brands-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/autodetaljering/" target="_blank"><i class="fi fi-brands-instagram"></i> Instagram</a>
+                <a href="https://tiktok.com/@auto.detaljering?_t=8mLq5cY5aCm&_r=1" target="_blank"><i class="fi fi-brands-tik-tok"></i> Tiktok</a>
             </div>
         </div>
         </div>
